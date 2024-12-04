@@ -1,4 +1,5 @@
-const Products = () => {
+const Products = ({ searchParams }) => {
+  console.log(searchParams.randon);
   return <div>Products</div>;
 };
 

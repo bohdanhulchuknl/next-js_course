@@ -4,7 +4,7 @@ const Account = () => {
   const userProfileInfo = null;
 
   if (userProfileInfo === null) {
-    redirect("profile");
+    redirect("cart?search=product1&random=123");
   }
   return <div>Account</div>;
 };

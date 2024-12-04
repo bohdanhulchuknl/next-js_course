@@ -1,4 +1,5 @@
-const Product = () => {
+const Product = ({ params }: {}) => {
+  console.log(params);
   return <div>Product</div>;
 };
 
