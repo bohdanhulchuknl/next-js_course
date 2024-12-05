@@ -1,7 +1,9 @@
 import "./globals.css";
 
 import Link from "next/link";
+import LoadingPage from "./loading";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import localFont from "next/font/local";
 
 const geistSans = localFont({
@@ -35,7 +37,7 @@ export default function RootLayout({
           <Link href="/products">Products</Link>
           <Link href="/accounts">Accounts</Link>
         </header>
-        {children}
+        <Suspense fallback={<LoadingPage />}>{children}</Suspense>
       </body>
     </html>
   );
