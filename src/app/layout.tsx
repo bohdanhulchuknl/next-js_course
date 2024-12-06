@@ -36,6 +36,8 @@ export default function RootLayout({
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/accounts">Accounts</Link>
+          <Link href="/server-data-fetch">Server fetching</Link>
+          <Link href="/client-data-fetch">Client fetching</Link>
         </header>
         <Suspense fallback={<LoadingPage />}>{children}</Suspense>
       </body>
